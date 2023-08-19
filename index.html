@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius Calculation </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="container flex flex-col lg:flex-row gap-2 m-10">
+                <!-- Card Section -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 flex-1">
+                    <!-- First Card -->
+                    <div class="card bg-base-100 shadow-xl p-4">
+                        <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Triangle</h2>
+                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>
+                                <input class="w-20 p-2 bg-gray-200" type="number" placeholder="base" id="base">
+                                <span>cm</span>
+                                <input class="w-20 p-2 bg-gray-200 ml-2" type="number" placeholder="hight" id="hight">
+                                <span>cm</span>
+                            </p>
+                            <p>Area Result: <span id="area-result">0</span> <span>cm<sup>2</sup></span> </p>
+                            <div class="card-actions">
+                                <button onclick="tringleCaltulation()" class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rectangle Card -->
+                    <div class="card bg-base-100 shadow-xl p-4">
+                        <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Rectangle</h2>
+                            <p>Area (A) = w X l</p>
+                            <p>
+                                <input class="w-20 p-2 bg-gray-200" type="text" placeholder="width" id="width">
+                                <span>cm</span>
+                                <input class="w-20 p-2 bg-gray-200 ml-2" type="text" placeholder="length" id="length">
+                                <span>cm</span>
+                            </p>
+                            <p>Area Result: <span id="reactangle-result">0</span> <span>cm<sup>2</sup></span> </p>
+                            <div class="card-actions">
+                                <button onclick="reacangleCalculation()"
+                                    class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Parallelogram Card -->
+                    <div class="card bg-base-100 shadow-xl p-4">
+                        <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Parallelogram</h2>
+                            <p>Area (A) = b X h</p>
+                            <p>
+                                <input class="w-20 p-2 bg-gray-200" type="number" placeholder="base"
+                                    id="Parallelogram-base"> <span>cm</span>
+                                <input class="w-20 p-2 bg-gray-200 ml-2" type="number" placeholder="hight"
+                                    id="Parallelogram-hight"> <span>cm</span>
+                            </p>
+                            <p>Area Result: <span id="Parallelogram-result">0</span> <span>cm<sup>2</sup></span> </p>
+                            <div class="card-actions">
+                                <button onclick="parallelogramCalculation()"
+                                    class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ellipse Card -->
+                    <div class="card bg-base-100 shadow-xl p-4">
+                        <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Ellipse</h2>
+                            <p>Area (A) = πab</p>
+                            <p>
+                                <input class="w-20 p-2 bg-gray-200" type="text" placeholder="major" id="ellipse-major">
+                                <span>cm</span>
+                                <input class="w-20 p-2 bg-gray-200 ml-2" type="text" placeholder="minor"
+                                    id="ellipse-minor"> <span>cm</span>
+                            </p>
+                            <p>Area Result: <span id="Ellipse-result">0</span> <span>cm<sup>2</sup></span> </p>
+                            <div class="card-actions">
+                                <button onclick="ellipseCalculation()" class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Calculation -->
+                <div class="w-[400px] text-center">
+                    <h1 class="text-4xl">Area Calculation</h1>
+                    <div id="area-calculation">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/tringle-calculation.js"></script>
+    <script src="js/reactangle-calculation.js"></script>
+    <script src="js/parallelogram-calculation.js"></script>
+</body>
+
+</html>
